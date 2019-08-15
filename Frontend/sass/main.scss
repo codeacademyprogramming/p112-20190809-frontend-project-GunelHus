@@ -171,6 +171,8 @@
         }
     }
 }
+
+/*Section Are You Ready*/
 .welcome-carousel{
     .slide{
         position: relative;
@@ -206,3 +208,63 @@
         }
         }
 }
+/*Section Trending Courses*/
+.trending-courses{
+    text-align: center;
+    margin-top: 6px;
+    .container{
+        .row{
+            .col-md-6{
+                .trending{
+                    background-color: #212121;
+                    padding: 25px 17px 17px;
+                    box-shadow: 0 4px 2px -2px #000000;
+                    z-index: 111;
+                    position: relative;
+                    top: -30px;
+                    transition: all 0.3s ease 0s;
+
+                    &:hover, &:hover .courses-icon{
+                        background-color: red;
+                        color:white;
+                    }
+                    }
+                }
+            }
+        }
+    }
+    .courses-icon{
+        height: 130px;
+    width: 130px;
+    background-color: #212121;
+    line-height: 88px;
+    text-align: center;
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+    font-size: 40px;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #ff3115;
+    transition: all 0.3s ease 0s;
+    }
+    .courses-text{
+        text-align: center;
+        margin-top: 6px;
+        h4{
+            position: relative;
+        color: #ffffff;
+        font-size: 20px;
+        margin-bottom: 7px;
+        z-index: 10;
+        }
+        p{
+            color: #cccccc;
+            margin-bottom: 0;
+        }
+    }
+
+
+
