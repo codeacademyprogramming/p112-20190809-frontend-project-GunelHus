@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+/*Header First*/
+
+.header-first{
+    background-color: black;
+    padding: 8px 0;
+    .row{
+        .welcome-left{
+            .welcome-edulearn{
+                i{
+                    color:red;
+                    margin-right: 3px;
+                }
+                span{
+                    color:white;
+                    font-size: 14px;
+                }
+            }
+        }
+        .welcome-right{
+            display: flex;
+            justify-content: flex-end;
+            a{
+                color:red;
+                font-size: 14px;
+                transition: 0.3s all;
+                &:hover{
+                    color:rgb(160, 7, 7);
+                }
+            }
+            
+            .welcome-icons{
+                margin-right: 15px;
+                
+                ul{
+                    display: flex;
+                    li{
+                        list-style: none;
+                        padding-right: 10px;
+                        font-size: 14px;
+                        a{
+                            color:gray;
+                            transition: 0.3s all;
+                            &:hover{
+                                color:white;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+/*Header Second*/
+
+.header-second{
+    padding: 25px 0 20px;
+    .header-mail{
+        .envelope{
+            display: flex;
+            i{
+                color:red;
+                font-size: 35px;
+                line-height: 40px;
+                text-align: center;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            a{
+                color:#505050;
+                span{
+                    display: inline-block;
+                    color:black;
+                    font-weight: 700;
+                    padding-bottom: 4px;
+                }
+            }
+        }
+    }
+    .header-image{
+        text-align: center;
+    }
+    .header-call-us{
+        display: flex;
+        justify-content: flex-end;
+        .call-us{
+            display: flex;
+            i{
+                color:red;
+                font-size: 35px;
+                line-height: 40px;
+                text-align: center;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .call-number{
+                a{
+                    color:#505050;
+                    span{
+                    display: inline-block;
+                    color:black;
+                    font-weight: 700;
+                    padding-bottom: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Header Third*/
+
+.header-third{
+    background-color: #212121;
+    .container{
+        .row{
+            .col-md-12{
+                .header-menu{
+                    display:flex;
+                    justify-content: space-between;
+                    .nav-list{
+                        ul{
+                            display: flex;
+                            li{
+                                list-style: none;
+                                margin-right: 40px;
+                                .nav-home{
+                                    color:red;
+                                }
+                                
+                                a{
+                                color:#bbbbbb;
+                                font-size: 16px;
+                                line-height: 55px;
+                                font-weight: 500;
+                                &:hover{
+                                    color:red;
+                                }
+                                }
+                            }
+                        }
+                    }
+                    .right-menu-bar{
+                        display: flex;
+                        align-items: center;
+                        a{
+                            padding:18px 15px;
+                            i{
+                                color:white;
+                            }
+                        }
+                        .search-icon{
+                            background-color:#FF3115;
+                        }
+                        .menu-icon{
+                            background-color: rgb(211, 32, 32);
+                            i{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

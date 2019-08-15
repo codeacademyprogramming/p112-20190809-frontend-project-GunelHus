@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+}
+
+/*Header First*/
+.header-first {
+  background-color: black;
+  padding: 8px 0;
+}
+
+.header-first .row .welcome-left .welcome-edulearn i {
+  color: red;
+  margin-right: 3px;
+}
+
+.header-first .row .welcome-left .welcome-edulearn span {
+  color: white;
+  font-size: 14px;
+}
+
+.header-first .row .welcome-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header-first .row .welcome-right a {
+  color: red;
+  font-size: 14px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.header-first .row .welcome-right a:hover {
+  color: #a00707;
+}
+
+.header-first .row .welcome-right .welcome-icons {
+  margin-right: 15px;
+}
+
+.header-first .row .welcome-right .welcome-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-first .row .welcome-right .welcome-icons ul li {
+  list-style: none;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.header-first .row .welcome-right .welcome-icons ul li a {
+  color: gray;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.header-first .row .welcome-right .welcome-icons ul li a:hover {
+  color: white;
+}
+
+/*Header Second*/
+.header-second {
+  padding: 25px 0 20px;
+}
+
+.header-second .header-mail .envelope {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-second .header-mail .envelope i {
+  color: red;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.header-second .header-mail .envelope a {
+  color: #505050;
+}
+
+.header-second .header-mail .envelope a span {
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+
+.header-second .header-image {
+  text-align: center;
+}
+
+.header-second .header-call-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header-second .header-call-us .call-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-second .header-call-us .call-us i {
+  color: red;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.header-second .header-call-us .call-us .call-number a {
+  color: #505050;
+}
+
+.header-second .header-call-us .call-us .call-number a span {
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+
+/*Header Third*/
+.header-third {
+  background-color: #212121;
+}
+
+.header-third .container .row .col-md-12 .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-third .container .row .col-md-12 .header-menu .nav-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-third .container .row .col-md-12 .header-menu .nav-list ul li {
+  list-style: none;
+  margin-right: 40px;
+}
+
+.header-third .container .row .col-md-12 .header-menu .nav-list ul li .nav-home {
+  color: red;
+}
+
+.header-third .container .row .col-md-12 .header-menu .nav-list ul li a {
+  color: #bbbbbb;
+  font-size: 16px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.header-third .container .row .col-md-12 .header-menu .nav-list ul li a:hover {
+  color: red;
+}
+
+.header-third .container .row .col-md-12 .header-menu .right-menu-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-third .container .row .col-md-12 .header-menu .right-menu-bar a {
+  padding: 18px 15px;
+}
+
+.header-third .container .row .col-md-12 .header-menu .right-menu-bar a i {
+  color: white;
+}
+
+.header-third .container .row .col-md-12 .header-menu .right-menu-bar .search-icon {
+  background-color: #FF3115;
+}
+
+.header-third .container .row .col-md-12 .header-menu .right-menu-bar .menu-icon {
+  background-color: #d32020;
+}
+
+.header-third .container .row .col-md-12 .header-menu .right-menu-bar .menu-icon i {
+  font-size: 20px;
+}
+/*# sourceMappingURL=main.css.map */
