@@ -208,6 +208,37 @@
         }
         }
 }
+/*Slide From Left*/
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideInLeft {
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    }
+    @keyframes slideInLeft {
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    } 
 /*Section Trending Courses*/
 .trending-courses{
     text-align: center;
@@ -215,7 +246,7 @@
     .container{
         .row{
             .col-md-6{
-                .trending{
+                .trending , .books , .teachers , .certification{
                     background-color: #212121;
                     padding: 25px 17px 17px;
                     box-shadow: 0 4px 2px -2px #000000;
@@ -225,16 +256,16 @@
                     transition: all 0.3s ease 0s;
 
                     &:hover, &:hover .courses-icon{
-                        background-color: red;
+                        background-color: #FF3115;
                         color:white;
                     }
                     }
                 }
             }
         }
-    }
-    .courses-icon{
-        height: 130px;
+    
+    .courses-icon , .books-icon , .teachers-icon , .certification-icon{
+    height: 130px;
     width: 130px;
     background-color: #212121;
     line-height: 88px;
@@ -250,7 +281,7 @@
     color: #ff3115;
     transition: all 0.3s ease 0s;
     }
-    .courses-text{
+    .courses-text , .books-text , .teachers-text , .certification-text{
         text-align: center;
         margin-top: 6px;
         h4{
@@ -265,6 +296,8 @@
             margin-bottom: 0;
         }
     }
+}
+/*Section About Us*/
 
 
 

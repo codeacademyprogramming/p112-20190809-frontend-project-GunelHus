@@ -249,13 +249,47 @@
   font-size: 18px;
 }
 
+/*Slide From Left*/
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 /*Section Trending Courses*/
 .trending-courses {
   text-align: center;
   margin-top: 6px;
 }
 
-.trending-courses .container .row .col-md-6 .trending {
+.trending-courses .container .row .col-md-6 .trending, .trending-courses .container .row .col-md-6 .books, .trending-courses .container .row .col-md-6 .teachers, .trending-courses .container .row .col-md-6 .certification {
   background-color: #212121;
   padding: 25px 17px 17px;
   -webkit-box-shadow: 0 4px 2px -2px #000000;
@@ -267,12 +301,12 @@
   transition: all 0.3s ease 0s;
 }
 
-.trending-courses .container .row .col-md-6 .trending:hover, .trending-courses .container .row .col-md-6 .trending:hover .courses-icon {
-  background-color: red;
+.trending-courses .container .row .col-md-6 .trending:hover, .trending-courses .container .row .col-md-6 .trending:hover .courses-icon, .trending-courses .container .row .col-md-6 .books:hover, .trending-courses .container .row .col-md-6 .books:hover .courses-icon, .trending-courses .container .row .col-md-6 .teachers:hover, .trending-courses .container .row .col-md-6 .teachers:hover .courses-icon, .trending-courses .container .row .col-md-6 .certification:hover, .trending-courses .container .row .col-md-6 .certification:hover .courses-icon {
+  background-color: #FF3115;
   color: white;
 }
 
-.courses-icon {
+.trending-courses .courses-icon, .trending-courses .books-icon, .trending-courses .teachers-icon, .trending-courses .certification-icon {
   height: 130px;
   width: 130px;
   background-color: #212121;
@@ -291,12 +325,12 @@
   transition: all 0.3s ease 0s;
 }
 
-.courses-text {
+.trending-courses .courses-text, .trending-courses .books-text, .trending-courses .teachers-text, .trending-courses .certification-text {
   text-align: center;
   margin-top: 6px;
 }
 
-.courses-text h4 {
+.trending-courses .courses-text h4, .trending-courses .books-text h4, .trending-courses .teachers-text h4, .trending-courses .certification-text h4 {
   position: relative;
   color: #ffffff;
   font-size: 20px;
@@ -304,8 +338,10 @@
   z-index: 10;
 }
 
-.courses-text p {
+.trending-courses .courses-text p, .trending-courses .books-text p, .trending-courses .teachers-text p, .trending-courses .certification-text p {
   color: #cccccc;
   margin-bottom: 0;
 }
+
+/*Section About Us*/
 /*# sourceMappingURL=main.css.map */
