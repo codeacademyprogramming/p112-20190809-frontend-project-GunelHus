@@ -171,3 +171,38 @@
         }
     }
 }
+.welcome-carousel{
+    .slide{
+        position: relative;
+    }
+    .slide-section-first{
+    position: absolute;
+    top: 211px;
+    left: 414px;
+    width: 100%;
+    h1{
+        color:white;
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    p{
+        color:white;
+        font-size: 18px;
+    }
+    }
+    .slide-section-second{
+        position: absolute;
+        top: 211px;
+        left: 414px;
+        width: 100%;
+        h1{
+            color:white;
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        p{
+            color:white;
+            font-size: 18px;
+        }
+        }
+}
