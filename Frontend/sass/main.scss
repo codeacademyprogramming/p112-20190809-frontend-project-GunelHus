@@ -246,7 +246,7 @@
     .container{
         .row{
             .col-md-6{
-                .trending , .books , .teachers , .certification{
+                .trending{
                     background-color: #212121;
                     padding: 25px 17px 17px;
                     box-shadow: 0 4px 2px -2px #000000;
@@ -264,7 +264,7 @@
             }
         }
     
-    .courses-icon , .books-icon , .teachers-icon , .certification-icon{
+    .courses-icon {
     height: 130px;
     width: 130px;
     background-color: #212121;
@@ -281,7 +281,7 @@
     color: #ff3115;
     transition: all 0.3s ease 0s;
     }
-    .courses-text , .books-text , .teachers-text , .certification-text{
+    .courses-text {
         text-align: center;
         margin-top: 6px;
         h4{
@@ -298,6 +298,77 @@
     }
 }
 /*Section About Us*/
+#about-us{
+    .text-about-us{
+        text-align: center;
+        h2{
+            font-size: 30px;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 16px;
+            margin: 15px 0 25px;
+            color:#505050;
+        }
+        hr{
+            border: 2px solid #ff3115;
+            width:100px;
+            margin: 0 auto 50px;
+        }
+    }
+}
+/*Accordion Section*/
 
-
+.video-link{
+    img{
+        width: 100%;
+        position: relative;
+    }
+    i{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 70px;
+    color:#ff3115;
+    }
+}
+.accordion-about-us{
+    .acc-items{
+        position: relative;
+        i{
+        top: 50%;
+        position: absolute;
+        right: 5px;
+        transform: translateY(-50%);
+        }
+    }
+}
+.btn-accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active {
+    background-color: #ff3115; 
+    
+        color: white;
+    
+  }
+  
+  .accordion-text {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
 
