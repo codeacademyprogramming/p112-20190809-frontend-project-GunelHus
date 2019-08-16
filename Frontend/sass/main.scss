@@ -176,6 +176,12 @@
 .welcome-carousel{
     .slide{
         position: relative;
+        .item{
+            background: #000000;
+            img{
+                opacity:0.4;
+            }
+        }
     }
     .slide-section-first{
     position: absolute;
@@ -254,6 +260,10 @@
                     position: relative;
                     top: -30px;
                     transition: all 0.3s ease 0s;
+                    &:hover .courses-icon i{
+                        animation-name: anim-scale;
+                        animation-duration: 1s;
+                    }
 
                     &:hover, &:hover .courses-icon{
                         background-color: #FF3115;
@@ -296,6 +306,15 @@
             margin-bottom: 0;
         }
     }
+   
+    }
+    @keyframes anim-scale{
+        from{
+            transform: scale(0);
+        }
+        to{
+            transform: scale(1);
+        }
 }
 /*Section About Us*/
 #about-us{
@@ -318,7 +337,7 @@
         }
     }
 }
-/*Accordion Section*/
+/* Section Video Accordion*/
 
 .video-link{
     img{
@@ -329,7 +348,7 @@
     position: absolute;
     top:50%;
     left:50%;
-    transform: translate(-50%);
+    transform: translate(-50%,-50%);
     font-size: 70px;
     color:#ff3115;
     }
@@ -358,7 +377,7 @@
     transition: 0.4s;
   }
   
-  .active {
+  .color-change {
     background-color: #ff3115; 
     
         color: white;
@@ -372,3 +391,178 @@
     overflow: hidden;
   }
 
+  /*Section Popular Courses And Science*/
+
+  #popular{
+        background-color: #f9f9f9;
+        padding: 100px 0;
+      .container{
+          .popular-courses{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px
+            
+            
+          }
+          h2{
+            font-size: 30px;
+            line-height: 24px;
+            margin-bottom: 15px;
+          }
+          p{
+            margin-bottom: 0;
+            font-size: 16px;
+            margin-bottom: 50px !important;
+          }
+          hr{
+            border: 2px solid #ff3115;
+            width:100px;
+            margin: 0 auto 50px;
+          }
+      }
+  }
+
+.slide2{
+    .card-items{
+        position: relative;
+        .price{
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%)
+        }
+        .card-body{
+            margin-top: 15px;
+            text-align: center;
+            a:first-child{
+                color:#ff3115;
+                margin-bottom: 10px;
+                
+            }
+            .electrical {
+                margin-bottom: 15px;
+                a{
+                color:#212121;
+                font-size: 20px;
+                &:hover{
+                    color:gray;
+                }
+                }
+            }
+            .card-rating{
+                display: flex;
+                justify-content: center;
+                .rating-stars{
+
+                    display: inline-block;
+                    color: #ff3115;
+                    margin-right: 10px;
+                    padding-right: 10px;
+                    margin-bottom: 15px;
+                    border-right: 1px solid #ddd;
+                    line-height: 10px;
+                    li{
+                        color:#ff3115;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .card-text{
+                p{
+                    margin: 0 0 22px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #505050;
+                    line-height: 26px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .card-footer{
+            padding: 15px 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+            .course-time{
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                line-height: 19px;
+                font-size: 16px;
+                color: #505050;
+                font-weight: 400;
+                .card-time{
+                    font-weight: 700;
+                    display: block;
+                    font-size: 14px;
+                    color: #212121;
+                    text-align: center;
+                    line-height: 19px;
+                }
+                .card-year{
+                    display: block;
+                    font-size: 14px;
+                    color: #212121;
+                    font-weight: 500;
+                    text-align: center;
+                    line-height: 19px;
+                }
+            }
+            .course-student{
+                padding-left: 8px;
+                margin-left: 8px;
+                border-left: 1px solid #ccc;
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                line-height: 19px;
+                .student-time{
+                    font-weight: 700;
+                    display: block;
+                    font-size: 14px;
+                    color: #212121;
+                    text-align: center;
+                    line-height: 19px;
+                }
+                .student-year{
+                    display: block;
+                    font-size: 14px;
+                    color: #212121;
+                    font-weight: 500;
+                    text-align: center;
+                    line-height: 19px;
+                }
+            }
+            .duration{
+                padding-left: 8px;
+                margin-left: 8px;
+                border-left: 1px solid #ccc;
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                line-height: 19px;
+                .duration-time{
+                    font-weight: 700;
+                    display: block;
+                    font-size: 14px;
+                    color: #212121;
+                    text-align: center;
+                    line-height: 19px;
+                }
+                .duration-year{
+                    display: block;
+                    font-size: 14px;
+                    color: #212121;
+                    font-weight: 500;
+                    text-align: center;
+                    line-height: 19px;
+                }
+            }
+            
+        }
+    }
+}
+#counter{
+    background-image: url(../Images/counter-bg.jpg);
+    
+}

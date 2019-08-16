@@ -213,6 +213,14 @@
   position: relative;
 }
 
+.welcome-carousel .slide .item {
+  background: #000000;
+}
+
+.welcome-carousel .slide .item img {
+  opacity: 0.4;
+}
+
 .welcome-carousel .slide-section-first {
   position: absolute;
   top: 211px;
@@ -301,6 +309,13 @@
   transition: all 0.3s ease 0s;
 }
 
+.trending-courses .container .row .col-md-6 .trending:hover .courses-icon i {
+  -webkit-animation-name: anim-scale;
+          animation-name: anim-scale;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 .trending-courses .container .row .col-md-6 .trending:hover, .trending-courses .container .row .col-md-6 .trending:hover .courses-icon {
   background-color: #FF3115;
   color: white;
@@ -343,6 +358,28 @@
   margin-bottom: 0;
 }
 
+@-webkit-keyframes anim-scale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes anim-scale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 /*Section About Us*/
 #about-us .text-about-us {
   text-align: center;
@@ -366,7 +403,7 @@
   margin: 0 auto 50px;
 }
 
-/*Accordion Section*/
+/* Section Video Accordion*/
 .video-link img {
   width: 100%;
   position: relative;
@@ -376,8 +413,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 70px;
   color: #ff3115;
 }
@@ -408,7 +445,7 @@
   transition: 0.4s;
 }
 
-.active {
+.color-change {
   background-color: #ff3115;
   color: white;
 }
@@ -418,5 +455,205 @@
   display: none;
   background-color: white;
   overflow: hidden;
+}
+
+/*Section Popular Courses And Science*/
+#popular {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+
+#popular .container .popular-courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+#popular .container h2 {
+  font-size: 30px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+#popular .container p {
+  margin-bottom: 0;
+  font-size: 16px;
+  margin-bottom: 50px !important;
+}
+
+#popular .container hr {
+  border: 2px solid #ff3115;
+  width: 100px;
+  margin: 0 auto 50px;
+}
+
+.slide2 .card-items {
+  position: relative;
+}
+
+.slide2 .card-items .price {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.slide2 .card-items .card-body {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.slide2 .card-items .card-body a:first-child {
+  color: #ff3115;
+  margin-bottom: 10px;
+}
+
+.slide2 .card-items .card-body .electrical {
+  margin-bottom: 15px;
+}
+
+.slide2 .card-items .card-body .electrical a {
+  color: #212121;
+  font-size: 20px;
+}
+
+.slide2 .card-items .card-body .electrical a:hover {
+  color: gray;
+}
+
+.slide2 .card-items .card-body .card-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slide2 .card-items .card-body .card-rating .rating-stars {
+  display: inline-block;
+  color: #ff3115;
+  margin-right: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  border-right: 1px solid #ddd;
+  line-height: 10px;
+}
+
+.slide2 .card-items .card-body .card-rating .rating-stars li {
+  color: #ff3115;
+  font-size: 13px;
+}
+
+.slide2 .card-items .card-body .card-text p {
+  margin: 0 0 22px;
+  text-align: center;
+  font-size: 16px;
+  color: #505050;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.slide2 .card-items .card-footer {
+  padding: 15px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.slide2 .card-items .card-footer .course-time {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  line-height: 19px;
+  font-size: 16px;
+  color: #505050;
+  font-weight: 400;
+}
+
+.slide2 .card-items .card-footer .course-time .card-time {
+  font-weight: 700;
+  display: block;
+  font-size: 14px;
+  color: #212121;
+  text-align: center;
+  line-height: 19px;
+}
+
+.slide2 .card-items .card-footer .course-time .card-year {
+  display: block;
+  font-size: 14px;
+  color: #212121;
+  font-weight: 500;
+  text-align: center;
+  line-height: 19px;
+}
+
+.slide2 .card-items .card-footer .course-student {
+  padding-left: 8px;
+  margin-left: 8px;
+  border-left: 1px solid #ccc;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  line-height: 19px;
+}
+
+.slide2 .card-items .card-footer .course-student .student-time {
+  font-weight: 700;
+  display: block;
+  font-size: 14px;
+  color: #212121;
+  text-align: center;
+  line-height: 19px;
+}
+
+.slide2 .card-items .card-footer .course-student .student-year {
+  display: block;
+  font-size: 14px;
+  color: #212121;
+  font-weight: 500;
+  text-align: center;
+  line-height: 19px;
+}
+
+.slide2 .card-items .card-footer .duration {
+  padding-left: 8px;
+  margin-left: 8px;
+  border-left: 1px solid #ccc;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  line-height: 19px;
+}
+
+.slide2 .card-items .card-footer .duration .duration-time {
+  font-weight: 700;
+  display: block;
+  font-size: 14px;
+  color: #212121;
+  text-align: center;
+  line-height: 19px;
+}
+
+.slide2 .card-items .card-footer .duration .duration-year {
+  display: block;
+  font-size: 14px;
+  color: #212121;
+  font-weight: 500;
+  text-align: center;
+  line-height: 19px;
+}
+
+#counter {
+  background-image: url(../Images/counter-bg.jpg);
 }
 /*# sourceMappingURL=main.css.map */
