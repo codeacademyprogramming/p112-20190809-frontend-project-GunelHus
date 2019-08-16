@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   text-decoration: none;
 }
 
@@ -197,7 +197,7 @@
 }
 
 .header-third .container .row .col-md-12 .header-menu .right-menu-bar .search-icon {
-  background-color: #FF3115;
+  background-color: #ff3115;
 }
 
 .header-third .container .row .col-md-12 .header-menu .right-menu-bar .menu-icon {
@@ -316,8 +316,9 @@
           animation-duration: 1s;
 }
 
-.trending-courses .container .row .col-md-6 .trending:hover, .trending-courses .container .row .col-md-6 .trending:hover .courses-icon {
-  background-color: #FF3115;
+.trending-courses .container .row .col-md-6 .trending:hover,
+.trending-courses .container .row .col-md-6 .trending:hover .courses-icon {
+  background-color: #ff3115;
   color: white;
 }
 
@@ -653,7 +654,92 @@
   line-height: 19px;
 }
 
+/*Section Counter*/
 #counter {
   background-image: url(../Images/counter-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+#counter .counter .container .row .col-md-6 .counter-name h2 {
+  color: white;
+  font-size: 30px;
+  line-height: 28px;
+  margin-bottom: 25px;
+  margin: 0 0 26px;
+  font-weight: 700;
+}
+
+#counter .counter .container .row .col-md-6 .counter-text {
+  font-size: 16px;
+  color: #505050;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+#counter .counter .container .row .col-md-6 .counter-text p {
+  margin-bottom: 35px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#counter .counter .container .row .col-md-6 .counter-image img {
+  width: 100%;
+}
+
+#counter .counter .container .row .col-md-6 .counter-list {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 23px;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+#counter .counter .container .row .col-md-6 .counter-list:hover {
+  border-color: #ff3115;
+}
+
+#counter .counter .container .row .col-md-6 .counter-list h2 {
+  font-size: 60px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+#counter .counter .container .row .col-md-6 .counter-list h4 {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+/*Section Upcoming Events*/
+#upcoming-events {
+  padding: 100px 0;
+}
+
+#upcoming-events .text-events {
+  text-align: center;
+}
+
+#upcoming-events .text-events h2 {
+  font-size: 30px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+#upcoming-events .text-events p {
+  font-size: 16px;
+  margin: 15px 0 25px;
+  color: #505050;
+}
+
+#upcoming-events .text-events hr {
+  border: 2px solid #ff3115;
+  width: 100px;
+  margin: 0 auto 50px;
 }
 /*# sourceMappingURL=main.css.map */

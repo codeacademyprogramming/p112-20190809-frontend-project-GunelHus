@@ -46,12 +46,15 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
+    $(this).siblings('.color-change').removeClass('color-change');
     this.classList.toggle("color-change");
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
     } else {
-        
+        $(".btn-accordion").each(function (ind, val) {
+            val.nextElementSibling.style.display = "none";
+        })  
       panel.style.display = "block";
     }
   });
