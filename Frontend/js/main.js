@@ -59,3 +59,47 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+$('.slide3').owlCarousel({
+    loop: true,
+    dots: false,
+    margin: 10,
+    nav: false,
+    navSpeed: 800,
+    autoplay: true,
+     transitionStyle: "fade",
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 1
+        },
+        992: {
+            items: 3
+        }
+    }
+
+}) 
+// Section Our Staff
+$('#our-staff-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    items:3,
+    transitionStyle : "fade",
+    responsive:{
+        0:{
+            items:1
+        },
+        576:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        992:{
+            items:3
+        }
+    }
+})
