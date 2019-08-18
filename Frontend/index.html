@@ -96,7 +96,17 @@
                         <div class="header-menu">
                             <nav class="nav-list">
                                 <ul>
-                                    <li><a class="nav-home" href="">HOME</a></li>
+                                    <li class="dropdown-item">
+                                        <a class="nav-home" href="">HOME</a>
+                                        <div class="dropdown-home">
+                                            <a href="">Home One</a>
+                                            <a href="">Home Two</a>
+                                            <a href="">Home Three</a>
+                                            <a href="">Home Four</a>
+                                            <a href="">Home Five</a>
+                                            <a href="">Home Instructor</a>
+                                        </div>
+                                    </li>
                                     <li><a href="">ABOUT US</a></li>
                                     <li><a href="">MEGA</a></li>
                                     <li><a href="">COURSES</a></li>
@@ -106,6 +116,57 @@
                                     <li><a href="">CONTACT</a></li>
                                 </ul>
                             </nav>
+                            <div class="nav-slide">
+                                <a href="#" class="nav-times">&times</a>
+                                <img src="/Images/logo-white.png">
+                                <ul>
+                                    <li><a>Home</a><i class="fas fa-chevron-down"></i></li>
+                                    <div class="slide-accordion">
+                                        <a href="">Home One</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Home Two</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Home Three</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Home Four</a><i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <li><a href="">About Us</a><i class="fas fa-chevron-down"></i></li>
+                                    <div class="slide-accordion">
+                                        <a href="">About One</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">About Two</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">About Three</a><i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <li><a href="">Pages</a><i class="fas fa-chevron-down"></i></li>
+                                    <div class="slide-accordion">
+                                        <a href="">Teachers</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Teachers</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Teachers</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Teachers</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Teachers</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Teachers</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Teachers</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Teachers</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Teachers</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Teachers</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Teachers</a><i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <li><a href="">Courses</a><i class="fas fa-chevron-down"></i></li>
+                                    <div class="slide-accordion">
+                                        <a href="">Courses</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Courses</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Courses</a><i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <li><a href="">Events</a><i class="fas fa-chevron-down"></i></li>
+                                    <div class="slide-accordion">
+                                        <a href="">Events</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Events</a><i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <li><a href="">Blog</a><i class="fas fa-chevron-down"></i></li>
+                                    <div class="slide-accordion">
+                                        <a href="">Blog</a><i class="fas fa-chevron-right"></i>
+                                        <a href="">Blog Details</a><i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <li><a href="">Contact</a><i class="fas fa-chevron-down"></i></li>
+                                </ul>
+                                <form></form>
+                            </div>
                             <div class="right-menu-bar">
                                 <a class="search-icon"><i class="fas fa-search"></i></a>
                                 <a class="menu-icon"><i class="fas fa-bars"></i></a>
@@ -411,11 +472,11 @@
                                 <div class="staff-image ">
                                     <img src="Images/team1.jpg" alt="Rashid Khan">
                                 </div>
-                                    <div class="staff-name">
-                                        <h3>ABD Rashid Khan</h3>
-                                        <p class="staff-prof">Vice Chancellor</p>
-                                    </div>
-                                
+                                <div class="staff-name">
+                                    <h3>ABD Rashid Khan</h3>
+                                    <p class="staff-prof">Vice Chancellor</p>
+                                </div>
+
                             </div>
                             <div class="our-staff-items ">
                                 <div class="staff-image">
@@ -458,15 +519,212 @@
         </section>
         <!--Section Our Latest News-->
         <section id="our-latest-news">
-                <div class="container">
-                        <div class="our-news">
-                            <h2>OUR LASTEST NEWS</h2>
-                            <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem. Sed nec molestie justo.</p>
-                            <hr>
+            <div class="container">
+                <div class="our-news">
+                    <h2>OUR LASTEST NEWS</h2>
+                    <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem. Sed nec molestie justo.</p>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="blog-girl">
+                            <div class="girl-img">
+                                <a href="#">
+                                    <img src="/Images/blog1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="girl-date">
+                                <i class="far fa-calendar-check"></i>
+                                <span>June 28, 2017</span>
+                            </div>
+                            <h4>
+                                <a href="#">Those Other College Expenses You Aren't Thinking About</a>
+                            </h4>
+                            <div class="girl-text">
+                                <p>
+                                    Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus
+                                    sem the purus eu sapien curabitur.Lorem Ipsum is therefore always free from
+                                    repetitionetc.
+                                </p>
+                            </div>
+                            <div class="girl-btn">
+                                <a href="#">Read More</a>
+                            </div>
                         </div>
-        </section>
 
+                    </div>
+                    <div class="col-md-6">
+                        <div class="blog-list">
+                            <div class="blog-list-items">
+                                <div class="list-image">
+                                    <a href="#">
+                                        <img src="/Images/blog2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="list-content">
+                                    <div class="list-title">
+                                        <h5>
+                                            <a href="">While the lovely valley team work</a>
+                                        </h5>
+                                    </div>
+                                    <div class="list-date">
+                                        <i class="far fa-calendar-check"></i>
+                                        <span>June 28, 2017</span>
+                                    </div>
+                                    <div class="list-text">
+                                        <p>
+                                            Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia
+                                            deserunt.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-list-items">
+                                <div class="list-image">
+                                    <a href="#">
+                                        <img src="/Images/blog3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="list-content">
+                                    <div class="list-title">
+                                        <h5>
+                                            <a href="">I must explain to you how all this idea</a>
+                                        </h5>
+                                    </div>
+                                    <div class="list-date">
+                                        <i class="far fa-calendar-check"></i>
+                                        <span>June 28, 2017</span>
+                                    </div>
+                                    <div class="list-text">
+                                        <p>
+                                            Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia
+                                            deserunt.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-list-items">
+                                <div class="list-image">
+                                    <a href="#">
+                                        <img src="/Images/blog4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="list-content">
+                                    <div class="list-title">
+                                        <h5>
+                                            <a href="#">I should be incapable of drawing a stroke</a>
+                                        </h5>
+                                    </div>
+                                    <div class="list-date">
+                                        <i class="far fa-calendar-check"></i>
+                                        <span>June 28, 2017</span>
+                                    </div>
+                                    <div class="list-text">
+                                        <p>
+                                            Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia
+                                            deserunt.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--Section Our Publications-->
+        <section id="our-publications">
+            <div class="our-publications">
+                <div class="container">
+                    <div class="our-publications-text">
+                        <div class="our-publications-items">
+                            <h2>OUR PUBLICATIONS</h2>
+                            <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--Our Publications Carousel-->
+                    <div class="row">
+                        <div class="owl-carousel owl-theme" id="publications-owl-carousel">
+                            <div class="public-carousel">
+                                <div class="public-image">
+                                    <a>
+                                        <img src="/Images/sale1.jpg">
+                                    </a>
+                                </div>
+                                <div class="public-body">
+                                    <a href="#" class="public-title">Book Packages V2</a>
+                                    <p>From: $85.00</p>
+                                    <a href="#" class="public-btn">Add To Cart</a>
+                                </div>
+                            </div>
+                            <div class="public-carousel">
+                                <div class="public-image">
+                                    <a>
+                                        <img src="/Images/sale2.jpg">
+                                    </a>
+                                </div>
+                                <div class="public-body">
+                                    <a href="#" class="public-title">Book Packages V2</a>
+                                    <p>From: $85.00</p>
+                                    <a href="#" class="public-btn">Add To Cart</a>
+                                </div>
+                            </div>
+                            <div class="public-carousel">
+                                <div class="public-image">
+                                    <a>
+                                        <img src="/Images/sale3.jpg">
+                                    </a>
+                                </div>
+                                <div class="public-body">
+                                    <a href="#" class="public-title">Book Packages V2</a>
+                                    <p>From: $85.00</p>
+                                    <a href="#" class="public-btn">Add To Cart</a>
+                                </div>
+                            </div>
+                                <div class="public-carousel">
+                                    <div class="public-image">
+                                        <a>
+                                            <img src="/Images/sale4.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="public-body">
+                                        <a href="#" class="public-title">Book Packages V2</a>
+                                        <p>From: $85.00</p>
+                                        <a href="#" class="public-btn">Add To Cart</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="view-button">
+                        <a href="#">VIEW ALL</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="colleges">
+            <div class="container">
+                    <div class="owl-carousel owl-theme" id="carousel-colleges">
+                                <div class="college-items">
+                                    <img src="Images/p1.png" alt="">
+                                </div>
+                                <div class="college-items">
+                                    <img src="Images/p2.png" alt="">
+                                </div>
+                                <div class="college-items">
+                                    <img src="Images/p3.png" alt="">
+                                </div>
+                                <div class="college-items">
+                                    <img src="Images/p4.png" alt="">
+                                </div>
+                                <div class="college-items">
+                                    <img src="Images/p5.png" alt="">
+                                </div>
+            </div>
+        </section>
     </main>
+    <footer></footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="vendor/font.js"></script>

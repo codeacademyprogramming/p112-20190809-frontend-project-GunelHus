@@ -1,3 +1,28 @@
+// Section Nav Accordion 
+
+$(function(){
+$(".nav-slide ul li").each(function(index, value){
+    $(value).click(function(){
+        let panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight=null;
+        }
+        else{
+            panel.style.maxHeight=panel.scrollHeight+"px";
+        }
+    })
+})
+
+$(".menu-icon").click(function(){
+    $(".nav-slide").css("width","350px");
+})
+$(".nav-times").click(function(){
+    $(".nav-slide").css("width","0");
+})
+})
+
+
+
 $('.slide').owlCarousel({
     loop: true,
     dots: false,
@@ -100,6 +125,56 @@ $('#our-staff-carousel').owlCarousel({
         },
         992:{
             items:3
+        }
+    }
+})
+
+// Section Publications Carousel
+$('#publications-owl-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    items:3,
+    transitionStyle : "fade",
+    responsive:{
+        0:{
+            items:1
+        },
+        576:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        992:{
+            items:4
+        }
+    }
+})
+
+// Section Colleges Carousel
+$('#carousel-colleges').owlCarousel({
+    loop: true,
+    margin: 80,
+    nav: true,
+    navSpeed: 700,
+    smartSpeed: 1500,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    transitionStyle: "fade",
+    responsive: {
+        0: {
+            items: 1
+        },
+
+        576: {
+            items: 2
+        },
+        768: {
+            items: 4
+        },
+        992: {
+            items: 5
         }
     }
 })
