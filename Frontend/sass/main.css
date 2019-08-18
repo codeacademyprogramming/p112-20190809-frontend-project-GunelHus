@@ -253,7 +253,7 @@
 }
 
 .header-third .container .row .col-md-12 .header-menu .right-menu-bar a {
-  padding: 17px 15px;
+  padding: 18px 15px;
 }
 
 .header-third .container .row .col-md-12 .header-menu .right-menu-bar a i {
@@ -677,6 +677,42 @@
   z-index: 1;
 }
 
+.slide2 .card-items .card-image {
+  position: relative;
+}
+
+.slide2 .card-items .card-image .overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide2 .card-items .card-image .overlay i {
+  font-size: 20px;
+  color: #ff3115;
+}
+
+.slide2 .card-items:hover .card-image .overlay {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
 .slide2 .card-items .card-body {
   margin-top: 15px;
   text-align: center;
@@ -914,6 +950,34 @@
 
 #upcoming-events .slide3 .events-slide .events-header .events-image {
   margin-bottom: 20px;
+  position: relative;
+}
+
+#upcoming-events .slide3 .events-slide .events-header .events-image .overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#upcoming-events .slide3 .events-slide .events-header .events-image .overlay i {
+  font-size: 20px;
+  color: #ff3115;
 }
 
 #upcoming-events .slide3 .events-slide .events-header .events-image img {
@@ -921,6 +985,11 @@
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+#upcoming-events .slide3 .events-slide .events-header:hover .events-image .overlay {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 #upcoming-events .slide3 .events-slide .events-body {
@@ -1384,6 +1453,7 @@
 }
 
 #our-publications .our-publications .container .row .owl-carousel .public-carousel .public-body {
+  padding-top: 20px;
   background-color: white;
 }
 
@@ -1451,6 +1521,10 @@
   margin-bottom: 50px;
 }
 
+#what-people-say .people-say-header .owl-carousel .owl-stage-outer {
+  padding: 50px;
+}
+
 #what-people-say .people-say-header h2 {
   color: white;
   font-size: 30px;
@@ -1486,6 +1560,7 @@
   padding: 5px;
   background: #fff;
   border-radius: 50%;
+  z-index: 9999999;
 }
 
 #what-people-say #carousel-what-people-say .people-say-items .people-image img {
