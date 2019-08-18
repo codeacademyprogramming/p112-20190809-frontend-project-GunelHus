@@ -178,3 +178,29 @@ $('#carousel-colleges').owlCarousel({
         }
     }
 })
+// Section What People Say
+$('#carousel-what-people-say').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    items: 2,
+    navSpeed: 500,
+    smartSpeed: 1000,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    transitionStyle: "fade",
+    responsive: {
+        0: {
+            items: 1
+        },
+        576: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        992: {
+            items: 2
+        }
+    }
+})
