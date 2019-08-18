@@ -1521,10 +1521,6 @@
   margin-bottom: 50px;
 }
 
-#what-people-say .people-say-header .owl-carousel .owl-stage-outer {
-  padding: 50px;
-}
-
 #what-people-say .people-say-header h2 {
   color: white;
   font-size: 30px;
@@ -1544,12 +1540,16 @@
   margin: 0 auto 50px;
 }
 
-#what-people-say #carousel-what-people-say .people-say-items {
+#what-people-say #carousel-what-people-say .owl-stage-outer {
+  padding: 50px 0;
+}
+
+#what-people-say #carousel-what-people-say .owl-stage-outer .people-say-items {
   padding: 35px;
   background-color: #ffffff;
 }
 
-#what-people-say #carousel-what-people-say .people-say-items .people-image {
+#what-people-say #carousel-what-people-say .owl-stage-outer .people-say-items .people-image {
   position: absolute;
   top: -20px;
   left: 0;
@@ -1563,42 +1563,42 @@
   z-index: 9999999;
 }
 
-#what-people-say #carousel-what-people-say .people-say-items .people-image img {
+#what-people-say #carousel-what-people-say .owl-stage-outer .people-say-items .people-image img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
 
-#what-people-say #carousel-what-people-say .people-say-items .people-body {
+#what-people-say #carousel-what-people-say .owl-stage-outer .people-say-items .people-body {
   position: relative;
   padding: 44px 0;
 }
 
-#what-people-say #carousel-what-people-say .people-say-items .people-body h4 {
+#what-people-say #carousel-what-people-say .owl-stage-outer .people-say-items .people-body h4 {
   font-size: 20px;
   margin-bottom: 10px;
   color: black;
   font-weight: 800;
 }
 
-#what-people-say #carousel-what-people-say .people-say-items .people-body p {
+#what-people-say #carousel-what-people-say .owl-stage-outer .people-say-items .people-body p {
   font-size: 16px;
   line-height: 26px;
   color: #505050;
 }
 
-#what-people-say #carousel-what-people-say .people-say-items .people-body i {
+#what-people-say #carousel-what-people-say .owl-stage-outer .people-say-items .people-body i {
   position: absolute;
   font-size: 26px;
   color: #ff3115;
 }
 
-#what-people-say #carousel-what-people-say .people-say-items .people-body .fa-quote-left {
+#what-people-say #carousel-what-people-say .owl-stage-outer .people-say-items .people-body .fa-quote-left {
   top: 0;
   left: 0;
 }
 
-#what-people-say #carousel-what-people-say .people-say-items .people-body .fa-quote-right {
+#what-people-say #carousel-what-people-say .owl-stage-outer .people-say-items .people-body .fa-quote-right {
   bottom: 0;
   right: 0;
 }
